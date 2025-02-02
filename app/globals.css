@@ -1,21 +1,34 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Global styles for html and body */
+html, body {
+  margin-top: 10px;    /* Default top margin */
+  margin-right: 10vw;  /* 15% of the screen width (viewport width) */
+  margin-bottom: 10px; /* Default bottom margin */
+  margin-left: 10vw;   /* 15% of the screen width (viewport width) */
+  padding: 0;          /* Ensure no padding is added by default */
+  box-sizing: border-box; /* Ensure padding and margin do not affect layout */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* For screens larger than 600px (e.g., tablets and above) */
+@media (min-width: 600px) {
+  html, body {
+    margin-top: 15px;
+    margin-right: 10vw;  /* 15% of the screen width */
+    margin-bottom: 15px;
+    margin-left: 10vw;   /* 15% of the screen width */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* For screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1024px) {
+  html, body {
+    margin-top: 20px;
+    margin-right: 10vw;  /* 15% of the screen width */
+    margin-bottom: 100px;
+    margin-left: 10vw;   /* 15% of the screen width */
+  }
 }

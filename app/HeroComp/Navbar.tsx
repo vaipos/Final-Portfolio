@@ -1,0 +1,55 @@
+'use client'
+import React, { useState } from 'react';
+import { AiOutlineMail } from 'react-icons/ai'; // Correct Gmail icon
+import { FaLinkedin, FaGithub, FaBars } from 'react-icons/fa'; // LinkedIn, GitHub, and Bars icon for menu
+
+const Navbar = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false); // State to handle dropdown toggle
+
+  return (
+    <div className="flex text-sm justify-between">
+      <div className="flex text-sm">
+        <div className="font-bold">Vaishnavi Pasumarthi</div>
+        
+        {/* Dropdown for smaller screens */}
+        <div className="lg:hidden relative">
+          <button
+            onClick={() => setDropdownOpen(!isDropdownOpen)} // Toggle dropdown on button click
+            className="pl-5 my-0.5 cursor-pointer"
+          >
+            <FaBars size={16} /> {/* Hamburger menu icon */}
+          </button>
+          {isDropdownOpen && (
+            <div className="absolute top-full  left-0 bg-base-100 text-base-content shadow-lg p-2 space-y-2 w-40">
+              <div>About</div>
+              <div>Experience</div>
+              <div>Projects</div>
+            </div>
+          )}
+        </div>
+
+        {/* For larger screens, showing the menu inline */}
+        <div className="hidden lg:flex space-x-5 pl-5">
+          <div>About</div>
+          <div>Experience</div>
+          <div>Projects</div>
+        </div>
+      </div>
+
+      {/* Social media icons */}
+      <div className="flex space-x-7 scale-75">
+        <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+          <AiOutlineMail size={24} /> {/* Gmail icon */}
+        </a>
+        <a href="https://www.linkedin.com/in/vaishnavi-pasumarthi-683726251/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+          <FaLinkedin size={24} /> {/* LinkedIn icon */}
+        </a>
+        <a href="https://github.com/vaipos" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+          <FaGithub size={24} /> {/* GitHub icon */}
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
