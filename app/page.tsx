@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Ball from "./Ball";
+import Ball from "./HeroComp/Ball";
 import Navbar from "./HeroComp/Navbar";
 import WelcomeBoard from "./HeroComp/WelcomeBoard";
 

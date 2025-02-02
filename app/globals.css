@@ -1,34 +1,98 @@
-/* globals.css */
+/* Base Styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Global styles for html and body */
+/* Default styles for all screens */
+/* Base Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default styles for all screens */
 html, body {
-  margin-top: 10px;    /* Default top margin */
-  margin-right: 10vw;  /* 15% of the screen width (viewport width) */
-  margin-bottom: 10px; /* Default bottom margin */
-  margin-left: 10vw;   /* 15% of the screen width (viewport width) */
-  padding: 0;          /* Ensure no padding is added by default */
-  box-sizing: border-box; /* Ensure padding and margin do not affect layout */
+  @apply max-h-screen bg-gray-900 text-white;
+  margin: 0;
+  padding: 0;
 }
 
-/* For screens larger than 600px (e.g., tablets and above) */
-@media (min-width: 600px) {
-  html, body {
-    margin-top: 15px;
-    margin-right: 10vw;  /* 15% of the screen width */
-    margin-bottom: 15px;
-    margin-left: 10vw;   /* 15% of the screen width */
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  body {
+    max-width: 400px;  /* Fixed max-width for small screens */
+    margin: 3vh auto 0; /* Adds equal left and right margins */
   }
 }
 
-/* For screens larger than 1024px (e.g., desktops) */
-@media (min-width: 1024px) {
-  html, body {
-    margin-top: 20px;
-    margin-right: 10vw;  /* 15% of the screen width */
-    margin-bottom: 100px;
-    margin-left: 10vw;   /* 15% of the screen width */
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    max-width: 600px;  /* Fixed max-width for tablets */
+    margin: 2vh auto 0; /* Equal left and right margins */
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    max-width: 70vw;  /* Fixed max-width for desktops */
+    margin: 3vh auto 0; /* Equal left and right margins */
+  }
+}
+
+/* Laptop screens */
+@media (min-width: 1441px) and (max-width: 1600px) {
+  body {
+    max-width: 70vw;  /* Adjust width for laptop screens */
+    margin: 3vh auto 0; /* Equal left and right margins */
+  }
+}
+
+/* Monitor screens */
+@media (min-width: 1601px) {
+  body {
+    max-width: 60vw;  /* Adjust width for larger monitors */
+    margin: 3vh auto 0; /* Equal left and right margins */
+  }
+}
+
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  body {
+    max-width: 400px;  /* Fixed max-width for small screens */
+    margin: 3vh auto 0; /* Adds equal left and right margins */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    max-width: 600px;  /* Fixed max-width for tablets */
+    margin: 2vh auto 0; /* Equal left and right margins */
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    max-width: 70vw;  /* Fixed max-width for desktops */
+    margin: 3vh auto 0; /* Equal left and right margins */
+  }
+}
+
+/* Laptop screens */
+@media (min-width: 1441px) and (max-width: 1600px) {
+  body {
+    max-width: 70vw;  /* Adjust width for laptop screens */
+    margin: 3vh auto 0; /* Equal left and right margins */
+  }
+}
+
+/* Monitor screens */
+@media (min-width: 1601px) {
+  body {
+    max-width: 60vw;  /* Adjust width for larger monitors */
+    margin: 3vh auto 0; /* Equal left and right margins */
   }
 }

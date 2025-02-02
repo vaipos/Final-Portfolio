@@ -31,50 +31,61 @@ const WelcomeBoard = () => {
   };
 
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen  flex ">
       <div style={globalSpotlightStyle} />
       
-      <div className="items-center  relative z-10">
-        <div className="mt-[12vw] bg--900 text-7xl font-bold">
-          Hi there,
-          <div className="flex my-[2vw]">
-            <div className="text-secondary bg--900 text-7xl font-bold">
-              Vaishnavi
+      {/* Content Wrapper - Flexbox for Side-by-Side Layout */}
+      <div className="flex mt-[10vw] justify-between w-full ">
+        {/* Text Section */}
+        <div className="max-w-2xl">
+          <div className=" text-7xl font-bold">
+            Hi there,
+            <div className="flex my-[2vw]">
+              <div className="text-secondary text-7xl font-bold">
+                Vaishnavi
+              </div>
+              <div className="pl-4 text-7xl font-bold">here!</div>
             </div>
-            <div className="pl-4 bg--900 text-7xl font-bold">here!</div>
+          </div>
+          <div className="text-lg font-bold">
+            Web development, Machine Learning, and Data Analytics is my Jam
+          </div>
+          <div className="mt-4">
+            <div className="relative overflow-hidden rounded-lg group">
+              <p className="text-[#3d4451] leading-relaxed max-w-2xl space-y-2">
+                <span className="block transition-all duration-500 ease-in-out hover:text-primary">
+                  I am fascinated by high-impact technology, I have learned over{' '}  
+                  <span className="font-bold text-white">25+ ML algorithms</span> and contributed to{' '}
+                  <span className="font-bold text-white">15+ machine learning</span> projects.
+                </span>
+                <span className="block transition-all duration-500 ease-in-out hover:text-primary">
+                  Led{' '}
+                  <span className="font-bold text-white">5+ teams</span> in{' '}
+                  <span className="font-bold text-white">web development.</span> 
+                </span>
+                <span className="block transition-all duration-500 ease-in-out hover:text-primary">
+                  Experienced with{' '}
+                  <span className="font-bold text-white">AWS cloud computing</span> and{' '}
+                  <span className="font-bold text-white">Apache ecosystem</span> for data analysis/processing.
+                </span>
+                <span className="block transition-all duration-500 ease-in-out hover:text-primary">
+                  All accomplished within{' '}
+                  <span className="font-bold text-white">3 years</span> of professional experience.
+                </span>
+              </p>
+            </div>
           </div>
         </div>
-        <div className="text-lg font-bold">
-          Web development, Machine Learning, and Data Analytics is my Jam
-        </div>
-        <div className="mt-4 mr-96">
-          <div className="relative overflow-hidden rounded-lg group">
-            <p className="text-[#3d4451] leading-relaxed max-w-2xl space-y-2">
-              <span className="block transition-all duration-500 ease-in-out hover:text-primary">
-                I am fascinated by high-impact technologie, I have learnt over{' '}  <span className="font-bold text-white">25+ ML algorithms</span> and contributed to{' '}
-                <span className="font-bold text-white">15+ machine learning</span> projects.
-              </span>
-              <span className="block transition-all duration-500 ease-in-out hover:text-primary">
-                Led{' '}
-                <span className="font-bold text-white">5+ teams</span> in{' '}
-                <span className="font-bold text-white">web development.</span> 
-              </span>
-              <span className="block transition-all duration-500 ease-in-out hover:text-primary">
-                Experienced with{' '}
-                <span className="font-bold text-white">AWS cloud computing</span> and{' '}
-                <span className="font-bold text-white">Apache ecosystem</span> for data analysis/processing.
-              </span>
-              <span className="block transition-all duration-500 ease-in-out hover:text-primary">
-                All accomplished within{' '}
-                <span className="font-bold text-white">3 years</span> of professional experience.
-              </span>
-            </p>
-          </div>
+
+        {/* Hero Image on the Right */}
+        <div className="ml-auto">
+          <img 
+            src="/hero_genmoji.png" 
+            alt="Hero Genmoji"
+            className="w-[400px] h-auto object-contain"
+          />
         </div>
       </div>
-
-      {/* Animated Design on the right */}
-
     </div>
   );
 };
