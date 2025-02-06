@@ -1,14 +1,17 @@
 import Image from "next/image";
-import Ball from "./HeroComp/Ball";
 import Navbar from "./HeroComp/Navbar";
 import WelcomeBoard from "./HeroComp/WelcomeBoard";
+import AboutMe from "./HeroComp/AboutMe";
+import Experience from "./HeroComp/Experience";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <WelcomeBoard />
-      <Ball/>
+      <AboutMe/>
+      <Experience/>
+      
     </>
   );
 }

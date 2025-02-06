@@ -11,7 +11,7 @@
 
 /* Default styles for all screens */
 html, body {
-  @apply max-h-screen bg-gray-900 text-white;
+  @apply max-h-screen  text-white;
   margin: 0;
   padding: 0;
 }
@@ -93,6 +93,6 @@ html, body {
 @media (min-width: 1601px) {
   body {
     max-width: 60vw;  /* Adjust width for larger monitors */
-    margin: 3vh auto 0; /* Equal left and right margins */
+    margin: 2vh auto 0; /* Equal left and right margins */
   }
 }

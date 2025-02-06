@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false); // State to handle dropdown toggle
 
   return (
-    <div className="flex text-sm justify-between">
+    <div className="flex text-sm justify-between fixed bg-base-300 z-50 p-5 rounded-3xl w-full sm:w-[80vw] md:w-[70vw] lg:w-[70vw] xl:w-[70vw] 2xl:w-[60vw]">
       <div className="flex text-sm">
         <div className="font-bold">Vaishnavi Pasumarthi</div>
         
@@ -20,7 +20,7 @@ const Navbar = () => {
             <FaBars size={16} /> {/* Hamburger menu icon */}
           </button>
           {isDropdownOpen && (
-            <div className="absolute top-full  left-0 bg-base-100 text-base-content shadow-lg p-2 space-y-2 w-40">
+            <div className="absolute top-full left-0 bg-base-100 text-base-content shadow-lg p-2 space-y-2 w-40">
               <div>About</div>
               <div>Experience</div>
               <div>Projects</div>
