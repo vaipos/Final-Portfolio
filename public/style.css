@@ -1,0 +1,5 @@
+/* Add this custom class to ensure max-width is overridden */
+.w-full-override {
+    max-width: none !important;
+  }
+  

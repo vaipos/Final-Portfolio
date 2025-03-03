@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, CSSProperties, useEffect } from 'react';
+import Image from 'next/image';
 
 const WelcomeBoard = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -31,7 +32,7 @@ const WelcomeBoard = () => {
   };
 
   return (
-    <div className="h-[95%] flex pb-28">
+    <div className="h-[95%] flex pb-28 overflow-x-hidden">
       <div style={globalSpotlightStyle} />
       
       {/* Content Wrapper - Using a custom breakpoint for layout switching */}
@@ -64,24 +65,24 @@ const WelcomeBoard = () => {
             <div className="mt-4">
               <div className="relative overflow-hidden rounded-lg group">
                 <p className="text-[#3d4451] leading-relaxed space-y-2 text-sm md:text-base lg:text-lg">
-                  <span className="block transition-all duration-500 ease-in-out hover:text-primary">
+                  <span className="block transition-all duration-500 ease-in-out hover:text-white">
                     I am fascinated by high-impact technology, I have learned over{' '}  
-                    <span className="font-bold text-white">25+ ML algorithms</span> and contributed to{' '}
-                    <span className="font-bold text-white">15+ machine learning</span> projects.
+                    <span className="font-bold text-primary ">25+ ML algorithms</span> and contributed to{' '}
+                    <span className="font-bold text-primary">15+ machine learning</span> projects.
                   </span>
-                  <span className="block transition-all duration-500 ease-in-out hover:text-primary">
+                  <span className="block transition-all duration-500 ease-in-out hover:text-white">
                     Led{' '}
-                    <span className="font-bold text-white">5+ teams</span> in{' '}
-                    <span className="font-bold text-white">web development.</span> 
+                    <span className="font-bold text-primary">5+ teams</span> in{' '}
+                    <span className="font-bold text-primary">web development.</span> 
                   </span>
-                  <span className="block transition-all duration-500 ease-in-out hover:text-primary">
+                  <span className="block transition-all duration-500 ease-in-out hover:text-white">
                     Experienced with{' '}
-                    <span className="font-bold text-white">AWS cloud computing</span> and{' '}
-                    <span className="font-bold text-white">Apache ecosystem</span> for data analysis/processing.
+                    <span className="font-bold text-primary">AWS cloud computing</span> and{' '}
+                    <span className="font-bold text-primary">Apache ecosystem</span> for data analysis/processing.
                   </span>
-                  <span className="block transition-all duration-500 ease-in-out hover:text-primary">
+                  <span className="block transition-all duration-500 ease-in-out hover:text-white">
                     All accomplished within{' '}
-                    <span className="font-bold text-white">3 years</span> of professional experience.
+                    <span className="font-bold text-primary">3 years</span> of professional experience.
                   </span>
                 </p>
               </div>
@@ -90,9 +91,11 @@ const WelcomeBoard = () => {
 
           {/* Hero Image */}
           <div className="w-[200px] md:w-[200px] lg:w-[300px] flex-shrink-0 my-[5%]">
-            <img 
+            <Image 
               src="/hero_genmoji.png" 
               alt="Hero Genmoji"
+              width={300}
+              height={300}
               className="w-full h-auto object-contain"
             />
           </div>

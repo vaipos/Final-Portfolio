@@ -10,17 +10,20 @@
   },
   "dependencies": {
     "framer-motion": "^12.0.6",
+    "motion": "^12.4.3",
     "next": "^15.1.6",
     "node": "^23.7.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "react-slick": "^0.30.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-slick": "^0.23.13",
     "daisyui": "^4.12.23",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",

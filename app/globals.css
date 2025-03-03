@@ -4,6 +4,52 @@
 @tailwind utilities;
 
 /* Default styles for all screens */
+html, body {
+  @apply max-h-screen text-white;
+  margin: 0;
+  padding: 0;
+  overflow-x: visible; /* Allow horizontal overflow */
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  body {
+    max-width: 400px;  /* Fixed max-width for small screens */
+    margin: 3vh auto 0; /* Adds equal left and right margins */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    max-width: 600px;  /* Fixed max-width for tablets */
+    margin: 2vh auto 0; /* Equal left and right margins */
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    max-width: 70vw;  /* Fixed max-width for desktops */
+    margin: 3vh auto 0; /* Equal left and right margins */
+  }
+}
+
+/* Laptop screens */
+@media (min-width: 1441px) and (max-width: 1600px) {
+  body {
+    max-width: 70vw;  /* Adjust width for laptop screens */
+    margin: 3vh auto 0; /* Equal left and right margins */
+  }
+}
+
+/* Monitor screens */
+@media (min-width: 1601px) {
+  body {
+    max-width: 60vw;  /* Adjust width for larger monitors */
+    margin: 3vh auto 0; /* Equal left and right margins */
+  }
+}
 /* Base Styles */
 @tailwind base;
 @tailwind components;
@@ -11,9 +57,10 @@
 
 /* Default styles for all screens */
 html, body {
-  @apply max-h-screen  text-white;
+  @apply max-h-screen text-white;
   margin: 0;
   padding: 0;
+  overflow-x: visible; /* Allow horizontal overflow */
 }
 
 /* Small screens (phones) */
@@ -52,47 +99,18 @@ html, body {
 @media (min-width: 1601px) {
   body {
     max-width: 60vw;  /* Adjust width for larger monitors */
-    margin: 3vh auto 0; /* Equal left and right margins */
-  }
-}
-
-
-/* Small screens (phones) */
-@media (max-width: 600px) {
-  body {
-    max-width: 400px;  /* Fixed max-width for small screens */
-    margin: 3vh auto 0; /* Adds equal left and right margins */
-  }
-}
-
-/* Medium screens (tablets) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  body {
-    max-width: 600px;  /* Fixed max-width for tablets */
     margin: 2vh auto 0; /* Equal left and right margins */
   }
+
 }
 
-/* Large screens (desktops) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  body {
-    max-width: 70vw;  /* Fixed max-width for desktops */
-    margin: 3vh auto 0; /* Equal left and right margins */
-  }
+.overflow-hidden-over{
+margin-right: -20%;
+max-width: 95vw;
+ margin-left: -25%;
+
+
+
+  overflow: hidden;
 }
 
-/* Laptop screens */
-@media (min-width: 1441px) and (max-width: 1600px) {
-  body {
-    max-width: 70vw;  /* Adjust width for laptop screens */
-    margin: 3vh auto 0; /* Equal left and right margins */
-  }
-}
-
-/* Monitor screens */
-@media (min-width: 1601px) {
-  body {
-    max-width: 60vw;  /* Adjust width for larger monitors */
-    margin: 2vh auto 0; /* Equal left and right margins */
-  }
-}
