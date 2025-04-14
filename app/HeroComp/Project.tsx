@@ -7,26 +7,26 @@ import { FaGithub } from "react-icons/fa";
 const projects = [
   {
     title: "Neuro Guide",
-    description: "Designed an innovative automobile authentication system using advanced facial recognition AI technology.",
+    description: "Architected a transfer learning based deep neural network that classifies users to a specific neurological disorder beased on quiz results.",
     image: "/d.png",
     link: "https://github.com/vaipos/Neuro-Guide",
   },
   {
     title: "Bug Tracker",
-    description: "Designed an innovative automobile authentication system using advanced facial recognition AI technology.",
+    description: "Developed backend REST APIs to encrypt, get/post, and decrypt, as well as designed multiple user interfaces.",
     image: "/a.png",
     link: "https://github.com/vaipos/Bug-Tracker-CS-3354",
   },
   {
     title: "Pulmo",
     description:
-      "Designed an innovative automobile authentication system using advanced facial recognition AI technology.",
+      "Trained DNN to provide a perfect fit 98 percent accuracy on over 22110 tokens and SVM to achieve 88 percent f-1.",
     image: "/b.png",
     link: "https://github.com/AnishG-git/Axxess2024",
   },
   {
     title: "3D Graphics",
-    description: "Designed an innovative automobile authentication system using advanced facial recognition AI technology.",
+    description: "Designed graphics using Three.JS, enhancing skills in computer graphics.",
     image: "/c.png",
     link: "https://github.com/vaipos/3D-Project-Collection",
   },

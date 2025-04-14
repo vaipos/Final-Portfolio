@@ -1,5 +1,7 @@
 'use client'
 import React, { useState, CSSProperties, useEffect } from 'react';
+import { ExtrudeModel } from 'extrude-ui';
+
 import Image from 'next/image';
 
 const WelcomeBoard = () => {
@@ -88,6 +90,7 @@ const WelcomeBoard = () => {
               </div>
             </div>
           </div>
+  
 
           {/* Hero Image */}
           <div className="w-[200px] md:w-[200px] lg:w-[300px] flex-shrink-0 my-[5%]">

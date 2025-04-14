@@ -22,7 +22,7 @@ export default function Home() {
       </div>
       <footer className="footer footer-center bg-base-100 text-slate-300 p-4">
         <aside>
-          <p>Designed and Built by Vaishnavi Pasumarthi. All right reserved. ©</p>
+          <p>Designed and Built by Vaishnavi Pasumarthi. All rights reserved. ©</p>
         </aside>
       </footer>
     </>
